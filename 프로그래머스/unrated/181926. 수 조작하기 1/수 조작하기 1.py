@@ -1,15 +1,15 @@
 def solution(n, control):
     
     answer = int(n)
-    for i in range(len(control)):
-        print(control[0])
-        if control[i] == "w":
+    for i in control:
+        
+        if i == "w":
             answer +=1
-        elif control[i] == "s":
+        elif i == "s":
             answer -=1
-        elif control[i] == "d":
+        elif i == "d":
             answer +=10
-        elif control[i] == 'a':
+        elif i == 'a':
             answer -=10
     return answer
 
