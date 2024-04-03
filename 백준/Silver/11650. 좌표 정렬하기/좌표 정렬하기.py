@@ -1,2 +1,2 @@
 n = int(input())
-for i,j  in sorted([[*map(int, input().split())] for _ in range(n)], key = lambda x: (x[0], x[1])): print(i,j)
+for i,j in sorted([input().split() for _ in range(n)], key = lambda x: (int(x[0]),int(x[1]))): print(i,j)
